@@ -12,7 +12,7 @@
         left: 0;
         top: 0;
         width: 100%;
-        -webkit-backface-visibility: hidden; 
+        -webkit-backface-visibility: hidden;
         backface-visibility: hidden; //hide back side of the element
         border-radius: 3px;
         overflow: hidden;
@@ -148,7 +148,9 @@
         font-weight: 100;
     }
 
-    @include respond(tab-port){
+    @media only screen and (max-width: 56.25em),
+           only screen and (hover:none){
+             
         height: auto;
         border-radius: 3px;
         background-color: $color-white;
